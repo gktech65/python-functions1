@@ -1,0 +1,119 @@
+(1)
+# Write a Python Function that takes two lists and returns True if they have at least one common member
+
+def check(l1,l2):
+  for x in l1:
+    for y in l2:
+      if(x==y):
+        print(x)
+
+z1=input()
+l1=z1.split()
+z2=input()
+l2=z2.split()
+check(l1,l2)
+
+(2)
+# Write a Python function to find the GCD of 2 numbers
+def GCD(x,y):
+  import math
+  print(math.gcd(x,y))
+
+x=int(input())
+y=int(input())
+GCD(x,y)
+
+(3)
+# Write a Python Function to generate all the factors of a number
+
+def factors(x):
+  for i in range(1,x+1):
+    if x%i==0:
+      print(i)
+
+x=int(input())
+factors(x)
+
+(4)
+# Write a Python function to find sum of digits of a number
+
+def sum(x):
+  r=s=0
+  while x>0:
+    r=x%10
+    s=s+r
+    x=x//10
+  print(s)
+
+x=int(input())
+sum(x)
+
+(5)
+# Write a Python function to concatenate two strings
+
+def concate(str1,str2):
+  new=str1+" "+str2
+  return new
+
+x=input()
+y=input()
+print(concate(x,y))
+
+(6)
+# Write a Python function called compare which takes two strings s1 and s2 and an integer n as arguments. The function should return True if first n characters of both the strings are same else the function should return False
+
+def compare(s1,s2,n):
+  if s1[0:n]==s1[0:n]:
+    print("The substrings are equal")
+
+x=input()
+y=input()
+num=int(input())
+compare(x,y,num)
+
+(7)
+# Write a Python function to find whether a number is completely divisible by another number
+def divisible(num1,num2):
+  if num1%num2!=0:
+    print(num1,"is not completely divisible by",num2)
+
+x=int(input())
+y=int(input())
+divisible(x,y)
+
+(8)
+# Write a Python Program to display Fibonacci series using recursion 
+def Fib(n):  
+  if n <= 1:  
+    return n  
+  else:  
+    return(Fib(n-1) + Fib (n-2))  
+ 
+n=int(input())
+for i in range(n):  
+  print(Fib(i))
+
+(9)
+# Write a Python Program to find sum of n natural numbers using recursion 
+def sum(x):
+  s=0
+  for i in range(1,x+1):
+    s=s+i
+  print(s)
+
+x=int(input())
+sum(x)
+
+(10)
+ 
+# Write a Python Program to convert decimal to binary using recursion 
+
+def binary(n):
+  if n>1:
+    binary(n//2)
+  print(n%2,end="")
+
+n=int(input())
+binary(n)
+
+
